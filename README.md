@@ -3,6 +3,11 @@ React
 Vite
 Tailwind CSS
 JavaScript (ES6+)
+
+
+
+
+
 Folder Structure
 PORTFOLIO_WEB-SHARMA/
 ├── node_modules/
@@ -27,7 +32,12 @@ PORTFOLIO_WEB-SHARMA/
 ├── postcss.config.cjs
 ├── tailwind.config.cjs
 └── vite.config.js
-Briefly explain the purpose of each folder and file here.
+
+
+
+
+
+
 
 Setup Instructions
 Clone the repository:
