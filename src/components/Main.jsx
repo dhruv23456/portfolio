@@ -1,9 +1,17 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaFacebookF, FaLinkedinIn, FaFigma, FaGithub } from 'react-icons/fa';
-import Image from './img/tushar.jpg';
+import Image from './img/tushar.jpg'
+import Resume from '../assets/Tushar_Resume.pdf'; // Adjust the path based on your project structure
 
 const Main = () => {
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = Resume;
+    link.download = 'Tushar_Resume.pdf'; // Update with your preferred resume file name
+    link.click();
+  };
+
   return (
     <div id='main'>
       <img className='w-full h-screen object-cover object-left scale-x-[-1]' src={Image} alt="image" />
@@ -40,7 +48,13 @@ const Main = () => {
               <FaLinkedinIn className='cursor-pointer' size={20} />
             </a>
           </div>
+          <button className="bg-[#001b5e] mt-5  mb-5 w-28 h-8 rounded-lg text-white font-bold
+                                  hover:bg-[#fff] hover:border-2
+                                  hover:transition ease-in-out hover:text-[#001b5e]" onClick={downloadResume} >
+            Resume
+          </button>
         </div>
+
       </div>
     </div>
   );
