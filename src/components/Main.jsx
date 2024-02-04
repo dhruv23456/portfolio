@@ -23,7 +23,7 @@ const Main = () => {
               sequence={[
                 'Designer',
                 1000,
-                'Developer',
+                'Full Stack Developer',
                 2000,
                 'Tech Enthusiast',
                 2000,
