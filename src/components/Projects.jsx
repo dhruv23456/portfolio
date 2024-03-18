@@ -8,7 +8,7 @@ import weekaway from './img/weekaway.png';
 const Projects = () => {
   const projectsData = [
     { img: weekaway, title: 'WeekAway React.js', link: 'https://weekaway.com' },
-    { img: denama, title: 'Denama-Design', link: 'https://denama.com/' },
+    { img: denama, title: 'Denama', link: 'https://denama.com/' },
     { img: panditDekho, title: 'Pandit Dekho', link: 'https://www.figma.com/proto/t8CQW9JrrKQ3DVkU1WAObL/Pandit-Dekho?type=design&node-id=2-54&t=jG7jEZgqYXJuL5CF-0&scaling=scale-down&page-id=0%3A1' },
     { img: QuestionBank, title: 'Question Bank', link: 'https://www.figma.com/proto/E6MYUPkdUpFwDa4AhxLarE/Question-Bank-mobile?type=design&node-id=101-2&t=jG7jEZgqYXJuL5CF-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=102%3A38' },
     // Add more projects with their respective links

@@ -28,7 +28,7 @@ const data = [
     year: "2023*",
     organisation: 'TeckValley',
     title: 'Python Developer',
-    duration: '9* months',
+    duration: '11* months',
     details:
       `Develop and maintain APIs: Create and maintain RESTful APIs for web and mobile applications using technologies such as Django, DRF and PostgreSQL.
       Database management: Design and implement database schemas, optimize queries, and ensure data integrity using SQL or NoSQL databases.

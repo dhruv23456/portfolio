@@ -2,7 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaFacebookF, FaLinkedinIn, FaFigma, FaGithub } from 'react-icons/fa';
 import Image from './img/tushar.jpg'
-import Resume from '../assets/FSD_Tushar.pdf'; // Adjust the path based on your project structure
+import Resume from '../assets/Tushar_FSD.pdf'; // Adjust the path based on your project structure
 
 const Main = () => {
   const downloadResume = () => {
