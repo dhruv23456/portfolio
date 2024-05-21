@@ -6,7 +6,7 @@ const data = [
     year: 2022,
     organisation: 'Hackveda',
     title: 'Frontend Developer',
-    duration: '2 months',
+    duration: '3 months',
     details:
       `Worked with a proficient understanding of code conversion tools, This intership provides the complete experience of UI/UX designer to perform the operation as well as Leadership Quality to manage the team.
         Provided effective troubleshooting and remediation for web applications.  
@@ -27,8 +27,8 @@ const data = [
   {
     year: "2023*",
     organisation: 'TeckValley',
-    title: 'Python Developer',
-    duration: '11* months',
+    title: 'Software Developer',
+    duration: '1 Year 1 months',
     details:
       `Develop and maintain APIs: Create and maintain RESTful APIs for web and mobile applications using technologies such as Django, DRF and PostgreSQL.
       Database management: Design and implement database schemas, optimize queries, and ensure data integrity using SQL or NoSQL databases.
