@@ -17,7 +17,7 @@ const data = [
     year: 2022,
     organisation: 'Learn N build',
     title: 'Python Developer',
-    duration: '1 month',
+    duration: '2 month',
     details:
       `Identified failures and successes of a product, using them as a springboard for future development goals.
         Led the research and development of technologies.
@@ -28,7 +28,7 @@ const data = [
     year: "2023*",
     organisation: 'TeckValley',
     title: 'Software Developer',
-    duration: '1 Year 1 months',
+    duration: '1 Year 9 months',
     details:
       `Develop and maintain APIs: Create and maintain RESTful APIs for web and mobile applications using technologies such as Django, DRF and PostgreSQL.
       Database management: Design and implement database schemas, optimize queries, and ensure data integrity using SQL or NoSQL databases.
