@@ -1,20 +1,19 @@
-import React from 'react'
+import React from 'react';
 
 const ProjectItem = ({ img, title, link }) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#001b5e]'>
-      <img src={img} alt="/" className='rounded-xl group-hover:opacity-10' />
-      <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl font-bold text-white tracking-wider text-center'>
+    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-purple-900 rounded-xl group hover:bg-gradient-to-r from-purple-800 to-[#0f3460] transition-transform duration-500 transform hover:scale-105'>
+      <img src={img} alt={title} className='rounded-xl group-hover:opacity-20 transition-opacity duration-500' />
+      <div className='hidden group-hover:flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+        <h3 className='text-3xl font-extrabold text-white tracking-wider text-center mb-4 drop-shadow-lg animate-pulse'>
           {title}
         </h3>
-        {/* <p className='pb-4 pt-2 text-white text-center'>React Js</p> */}
-        <a href={link}>
-          <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>More info</p>
+        <a href={link} target='_blank' rel='noopener noreferrer'>
+          <button className='text-center px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-bold cursor-pointer text-lg transition-transform duration-300 transform hover:scale-110 shadow-md'>More Info</button>
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectItem
+export default ProjectItem;

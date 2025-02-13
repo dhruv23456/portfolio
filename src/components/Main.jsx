@@ -1,61 +1,64 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaFacebookF, FaLinkedinIn, FaFigma, FaGithub } from 'react-icons/fa';
-import Image from './img/tushar.jpg'
-import Resume from '../assets/Tushar_FSD.pdf'; // Adjust the path based on your project structure
+import Resume from '../assets/Dhruv_resume.pdf';
 
 const Main = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = Resume;
-    link.download = 'FSD_Tushar.pdf'; // Update with your preferred resume file name
+    link.download = 'Dhruv_resume.pdf';
     link.click();
   };
 
   return (
-    <div id='main'>
-      <img className='w-full h-screen object-cover object-left scale-x-[-1]' src={Image} alt="image" />
-      <div className='w-full h-screen absolute top-0 left-0 bg-white/50'>
-        <div className='max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center'>
-          <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>I'm Tushar Sharma</h1>
-          <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>I'm a
-            <TypeAnimation
-              sequence={[
-                'Designer',
-                1000,
-                'Full Stack Developer',
-                2000,
-                'Tech Enthusiast',
-                2000,
-              ]}
-              wrapper='div'
-              cursor={true}
-              repeat={Infinity}
-              style={{ fontsize: '1em', paddingLeft: '5px' }}
-            />
-          </h2>
-          <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-            <a href='https://www.figma.com/files/user/1068559529108824834?fuid=1068559529108824834' target='_blank' rel='noopener noreferrer'>
-              <FaFigma className='cursor-pointer' size={20} />
-            </a>
-            <a href='https://facebook.com/your_facebook_profile' target='_blank' rel='noopener noreferrer'>
-              <FaFacebookF className='cursor-pointer' size={20} />
-            </a>
-            <a href='https://github.com/Tushar-2021' target='_blank' rel='noopener noreferrer'>
-              <FaGithub className='cursor-pointer' size={20} />
-            </a>
-            <a href='https://www.linkedin.com/in/tushar-sharma-25d/' target='_blank' rel='noopener noreferrer'>
-              <FaLinkedinIn className='cursor-pointer' size={20} />
-            </a>
-          </div>
-          <button className="bg-[#001b5e] mt-5  mb-5 w-28 h-8 rounded-lg text-white font-bold
-                                  hover:bg-[#fff] hover:border-2
-                                  hover:transition ease-in-out hover:text-[#001b5e]" onClick={downloadResume} >
-            Resume
-          </button>
+    <div id='main' className='relative w-full h-screen bg-gradient-to-b from-black to-purple-900 animate-gradient text-white'>
+      <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center px-6'>
+        <h1 className='sm:text-6xl text-5xl font-extrabold text-white drop-shadow-lg'>I'm Dhruv Gangwar</h1>
+        <h2 className='flex sm:text-4xl text-3xl pt-6 text-gray-300'>I'm a
+          <TypeAnimation
+            sequence={[
+              'Designer', 1000,
+              'Content Writer', 2000,
+              'Storyteller', 2000,
+              'Artist', 2000,
+            ]}
+            wrapper='div'
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: '1.5em', paddingLeft: '10px' }}
+          />
+        </h2>
+        <div className='flex justify-center pt-6 space-x-6'>
+          <a href='https://www.figma.com/' target='_blank' rel='noopener noreferrer'>
+            <FaFigma className='cursor-pointer text-gray-500 hover:text-blue-400 transition-transform duration-300 transform hover:scale-125' size={30} />
+          </a>
+          <a href='https://facebook.com/' target='_blank' rel='noopener noreferrer'>
+            <FaFacebookF className='cursor-pointer text-gray-500 hover:text-blue-400 transition-transform duration-300 transform hover:scale-125' size={30} />
+          </a>
+          <a href='https://github.com/' target='_blank' rel='noopener noreferrer'>
+            <FaGithub className='cursor-pointer text-gray-500 hover:text-green-400 transition-transform duration-300 transform hover:scale-125' size={30} />
+          </a>
+          <a href='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
+            <FaLinkedinIn className='cursor-pointer text-gray-500 hover:text-blue-500 transition-transform duration-300 transform hover:scale-125' size={30} />
+          </a>
         </div>
-
+        <button className="mt-5 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" onClick={downloadResume}>
+          Download Resume
+        </button>
       </div>
+      <style jsx>{`
+        @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-gradient {
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+          background-image: linear-gradient(-45deg, #000000, #4B0082, #800080, #000000);
+        }
+      `}</style>
     </div>
   );
 }
