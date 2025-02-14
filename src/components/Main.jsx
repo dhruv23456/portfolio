@@ -36,10 +36,10 @@ const Main = () => {
           <a href='https://facebook.com/' target='_blank' rel='noopener noreferrer'>
             <FaFacebookF className='cursor-pointer text-gray-500 hover:text-blue-400 transition-transform duration-300 transform hover:scale-125' size={30} />
           </a>
-          <a href='https://github.com/' target='_blank' rel='noopener noreferrer'>
+          <a href='https://github.com/dhruv23456' target='_blank' rel='noopener noreferrer'>
             <FaGithub className='cursor-pointer text-gray-500 hover:text-green-400 transition-transform duration-300 transform hover:scale-125' size={30} />
           </a>
-          <a href='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
+          <a href='https://www.linkedin.com/in/dhruv-gangwar-7987b0237' target='_blank' rel='noopener noreferrer'>
             <FaLinkedinIn className='cursor-pointer text-gray-500 hover:text-blue-500 transition-transform duration-300 transform hover:scale-125' size={30} />
           </a>
         </div>
